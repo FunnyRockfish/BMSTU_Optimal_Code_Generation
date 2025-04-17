@@ -1,0 +1,8 @@
+/mnt/c/Users/FunnyRockfish/CLionProjects/CLionProjects/optimal_code_generation/lab2/cmake-build-debug/CMakeFiles/intrinsics_gen.dir
+/mnt/c/Users/FunnyRockfish/CLionProjects/CLionProjects/optimal_code_generation/lab2/cmake-build-debug/CMakeFiles/omp_gen.dir
+/mnt/c/Users/FunnyRockfish/CLionProjects/CLionProjects/optimal_code_generation/lab2/cmake-build-debug/CMakeFiles/acc_gen.dir
+/mnt/c/Users/FunnyRockfish/CLionProjects/CLionProjects/optimal_code_generation/lab2/cmake-build-debug/CMakeFiles/RISCVTargetParserTableGen.dir
+/mnt/c/Users/FunnyRockfish/CLionProjects/CLionProjects/optimal_code_generation/lab2/cmake-build-debug/CMakeFiles/lab2.dir
+/mnt/c/Users/FunnyRockfish/CLionProjects/CLionProjects/optimal_code_generation/lab2/cmake-build-debug/CMakeFiles/lab3.dir
+/mnt/c/Users/FunnyRockfish/CLionProjects/CLionProjects/optimal_code_generation/lab2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/FunnyRockfish/CLionProjects/CLionProjects/optimal_code_generation/lab2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

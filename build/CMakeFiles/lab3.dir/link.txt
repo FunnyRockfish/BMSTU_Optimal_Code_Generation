@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/lab3.dir/lab3.cpp.o -o lab3  -Wl,-rpath,/usr/lib/llvm-18/lib /usr/lib/llvm-18/lib/libLLVM.so.1 
