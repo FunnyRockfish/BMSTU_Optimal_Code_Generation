@@ -1,0 +1,208 @@
+{
+  "functions": [
+  {
+    "name": "printf",
+    "basic_blocks": [
+      {
+        "index": 2,
+        "predecessors": [0],
+        "successors": [1],
+        "statements": [
+          {
+            "type": "Инструкция",
+            "representation": "integer_type"
+          },
+          {
+            "type": "Инструкция",
+            "representation": "pointer_type"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "predecessors": [2],
+        "successors": [],
+        "statements": [
+        ]
+      }
+    ]
+  },
+  {
+    "name": "some_function",
+    "basic_blocks": [
+      {
+        "index": 2,
+        "predecessors": [0],
+        "successors": [3,4],
+        "statements": [
+          {
+            "type": "Присваивание",
+            "representation": "result_4 = a_2 * b_3"
+          },
+          {
+            "type": "Инструкция ветвления",
+            "representation": "if (result_4 > 100)"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "predecessors": [2],
+        "successors": [5],
+        "statements": [
+          {
+            "type": "Присваивание",
+            "representation": "result_6 = result_4 + -10"
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "predecessors": [3,4],
+        "successors": [1],
+        "statements": [
+          {
+            "type": "Присваивание",
+            "representation": "NULL_7 = result_1"
+          },
+          {
+            "type": "Инструкция",
+            "representation": "pointer_type"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "predecessors": [5],
+        "successors": [],
+        "statements": [
+        ]
+      },
+      {
+        "index": 4,
+        "predecessors": [2],
+        "successors": [5],
+        "statements": [
+          {
+            "type": "Присваивание",
+            "representation": "result_5 = result_4 + 10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main",
+    "basic_blocks": [
+      {
+        "index": 2,
+        "predecessors": [0],
+        "successors": [3,4],
+        "statements": [
+          {
+            "type": "Присваивание",
+            "representation": "a_5 = 15"
+          },
+          {
+            "type": "Присваивание",
+            "representation": "b_6 = 8"
+          },
+          {
+            "type": "Инструкция",
+            "representation": "integer_type"
+          },
+          {
+            "type": "Присваивание",
+            "representation": "<array_ref> = 0"
+          },
+          {
+            "type": "Присваивание",
+            "representation": "<array_ref> = 1"
+          },
+          {
+            "type": "Присваивание",
+            "representation": "<array_ref> = 2"
+          },
+          {
+            "type": "Присваивание",
+            "representation": "<array_ref> = 3"
+          },
+          {
+            "type": "Присваивание",
+            "representation": "<array_ref> = 4"
+          },
+          {
+            "type": "Присваивание",
+            "representation": "NULL_1 = c_9 ? 5"
+          },
+          {
+            "type": "ArrayRef",
+            "representation": "d_15 = <array_ref>"
+          },
+          {
+            "type": "Присваивание",
+            "representation": "NULL_2 = d_15"
+          },
+          {
+            "type": "Присваивание",
+            "representation": "NULL_3 = NULL_2 ? 1"
+          },
+          {
+            "type": "Инструкция ветвления",
+            "representation": "if (NULL_3 == 0)"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "predecessors": [2],
+        "successors": [5],
+        "statements": [
+          {
+            "type": "Инструкция",
+            "representation": "integer_type"
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "predecessors": [3,4],
+        "successors": [1],
+        "statements": [
+          {
+            "type": "Присваивание",
+            "representation": "NULL_18 = 0"
+          },
+          {
+            "type": "Присваивание",
+            "representation": "arr = <constructor>"
+          },
+          {
+            "type": "Инструкция",
+            "representation": "pointer_type"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "predecessors": [5],
+        "successors": [],
+        "statements": [
+        ]
+      },
+      {
+        "index": 4,
+        "predecessors": [2],
+        "successors": [5],
+        "statements": [
+          {
+            "type": "Инструкция",
+            "representation": "integer_type"
+          }
+        ]
+      }
+    ]
+  }
+  ]
+}
+

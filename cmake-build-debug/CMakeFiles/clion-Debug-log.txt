@@ -1,0 +1,4 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /mnt/c/Users/FunnyRockfish/CLionProjects/CLionProjects/optimal_code_generation/lab1 -B /mnt/c/Users/FunnyRockfish/CLionProjects/CLionProjects/optimal_code_generation/lab1/cmake-build-debug
+-- Configuring done (0.1s)
+-- Generating done (0.4s)
+-- Build files have been written to: /mnt/c/Users/FunnyRockfish/CLionProjects/CLionProjects/optimal_code_generation/lab1/cmake-build-debug

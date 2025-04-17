@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libmy_gcc_plugin.so -o libmy_gcc_plugin.so CMakeFiles/my_gcc_plugin.dir/src/lab1_plugin/lab1_plugin.cpp.o 

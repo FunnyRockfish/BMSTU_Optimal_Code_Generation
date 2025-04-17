@@ -1,0 +1,4 @@
+/mnt/c/Users/FunnyRockfish/CLionProjects/CLionProjects/optimal_code_generation/lab1/cmake-build-debug/CMakeFiles/lab1.dir
+/mnt/c/Users/FunnyRockfish/CLionProjects/CLionProjects/optimal_code_generation/lab1/cmake-build-debug/CMakeFiles/my_gcc_plugin.dir
+/mnt/c/Users/FunnyRockfish/CLionProjects/CLionProjects/optimal_code_generation/lab1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/FunnyRockfish/CLionProjects/CLionProjects/optimal_code_generation/lab1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
