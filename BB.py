@@ -1,10 +1,8 @@
-# BB.py -------------------------------------------------------------------
 from dataclasses import dataclass
 
 ALLOCA, LOAD, STORE, BR, CONDBR, ICMP, MUL, ADD, SUB, RET, PHI = \
     'alloca load store br condbr icmp mul add sub ret phi'.split()
 
-# ---------- Value ---------------------------------------------------------
 class Value: pass
 
 @dataclass
@@ -25,7 +23,6 @@ class IntConst(Value):
         return str(self.value)
     __repr__ = __str__
 
-# ---------- Instruction ---------------------------------------------------
 @dataclass
 class Instruction:
     typ: str
@@ -54,7 +51,6 @@ class Instruction:
         return f'{t}: {a}'
     __repr__ = __str__
 
-# ---------- Basic Block (BB) ---------------------------------------------------
 class BB:
     def __init__(self):
         self.block_num = 0
@@ -71,7 +67,6 @@ class BB:
         return f'BLOCK {self.block_num}' + '{\n' + body + '\n}'
     __repr__ = __str__
 
-    # ---- функции для построения IR ----------------------------------------
     def add_instr(self, instr):
         if not self.returned:
             self.instructions.append(instr)
@@ -93,7 +88,6 @@ class BB:
     def new_cond_break(self, cond, dest1, dest2):
         self.add_instr(Instruction(CONDBR, {"cond": cond, "dest1": dest1.block_num, "dest2": dest2.block_num}))
 
-    # ---- для SSA builder -------------------------------------------------
     def get_edges(self):
         if not self.instructions:
             return set()

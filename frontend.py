@@ -32,7 +32,6 @@ def lex(text):
             yield Token(m.lastgroup, m.group())
 
 
-# ---------- AST узлы ------------------------------------------------------
 class AST: pass
 
 
@@ -88,7 +87,6 @@ class Return(AST):
 
 
 
-# ---------- Парсер --------------------------------------------------------
 class Parser:
     def __init__(self, tokens):
         self.tokens = list(tokens)

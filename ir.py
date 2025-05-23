@@ -8,13 +8,11 @@ class TmpGen:
 
 def lower_expr(e, bb, tgen):
     code=[]
-    # --- терминалы -------------------------------------------------------
     if isinstance(e, Num):  return IntConst(e.value), code
     if isinstance(e, Var):
         tmp=tgen.new()
         bb.add_instr(Instruction(LOAD,{"from":bb.variables[e.name],"to":tmp}))
         return tmp, code
-    # --- унарные ---------------------------------------------------------
     if isinstance(e, UnOp):
         val,c1=lower_expr(e.expr,bb,tgen); code+=c1
         if e.op=="-":
@@ -25,7 +23,6 @@ def lower_expr(e, bb, tgen):
             zero=IntConst(0); tmp=tgen.new()
             code.append(Instruction(ICMP,{"arg1":val,"arg2":zero,"to":tmp}))
             return tmp,code
-    # --- бинарные --------------------------------------------------------
     if isinstance(e,BinOp):
         l,c1=lower_expr(e.left,bb,tgen); r,c2=lower_expr(e.right,bb,tgen); code+=c1+c2
         tmp=tgen.new()
@@ -33,7 +30,7 @@ def lower_expr(e, bb, tgen):
         if op=="+": kind=ADD
         elif op=="-": kind=SUB
         elif op=="*": kind=MUL
-        else: kind=ICMP            # все сравнения и логика -> ICMP
+        else: kind=ICMP
         if kind in (ADD,SUB,MUL):
             code.append(Instruction(kind,{"oper1":l,"oper2":r,"to":tmp}))
         else:
